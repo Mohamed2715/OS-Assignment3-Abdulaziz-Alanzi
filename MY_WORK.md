@@ -32,11 +32,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | Abdulaziz Alanzi |
+| **Student ID** | 445050093 |
+| **University Email** | 445050093@std.psau.edu.sa |
+| **GitHub Username** | Mohamed2715 |
+| **Repository Link** | https://github.com/Mohamed2715/OS-Assignment3-Abdulaziz-Alanzi |
  
 ---
 
@@ -300,14 +300,22 @@
 
 [Write your answer here.]
 
-Verification block of the **original starter**:
+Verification block of the **original starter** (the run ended with CPU thread exceptions in `ReadyQueue.snapshot()`):
 ```
-[Paste the verification block (or the exception/watchdog message) of the starter here]
+Context switches (quanta executed)     expected 20       observed 0        MISMATCH
+Completed processes                    expected 11       observed 0        MISMATCH
+Total service time (ms)                expected 44321    observed 0        MISMATCH
+Busy-waiting polls (must be 0)         expected 0        observed 0
+Exception: NullPointerException in ReadyQueue.snapshot(), SchedulerSimulationSync.java:151
 ```
 
 Verification block of **my final version**:
 ```
-[Paste the verification block of your final version here (all lines ✔)]
+Context switches (quanta executed)     expected 20       observed 20       ✔
+Completed processes                    expected 11       observed 11       ✔
+Total service time (ms)                expected 44321    observed 44321    ✔
+Busy-waiting polls (must be 0)         expected 0        observed 0        ✔
+All four verification lines passed in five consecutive runs.
 ```
 
 **Explanation of the timeline:**
